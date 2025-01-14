@@ -53,4 +53,14 @@ public class FactorProperties {
         int[] factors = findFactors(number);
         int sum = sumOfFactors(factors);
         long product = productOfFactors(factors);
-        int sumOfSquares = sumOfSquares
+        int sumOfSquares = sumOfSquaresOfFactors(factors);
+
+        // Display the results
+        System.out.println("Factors: " + java.util.Arrays.toString(factors));
+        System.out.println("Sum of Factors: " + sum);
+        System.out.println("Product of Factors: " + product);
+        System.out.println("Sum of Squares of Factors: " + sumOfSquares);
+
+        sc.close();
+    }
+}
